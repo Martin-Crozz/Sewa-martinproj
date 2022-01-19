@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa</title>
+    <!-- Bootstrap link Starts -->
+    <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/assets/bootstrap-4.3.1/css/bootstrap.min.css.map">
+    <!-- Bootstrap link Ends -->
+    <!-- Font Awesome Link Starts -->
+    <link rel="stylesheet" href="frontend/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Link Ends -->
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="frontend/assets/slick/slick.css">
+    <link rel="stylesheet" href="frontend/assets/slick/slick-theme.css">
+    <!-- Slick Css Ends-->
+    <!-- Custom Links -->
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap" rel="stylesheet" />
+    <!-- Font Link Ends -->
+    <link rel="stylesheet" href="https://k1ngzed.com/dist/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="https://k1ngzed.com/dist/EasyZoom/easyzoom.css" />
+    <!-- Countdown start -->
+    <link rel="stylesheet" href="frontend/assets/countdown/css/flipclock.css" />
+    <!-- Countdown Ends -->
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
+    <link rel="stylesheet" href="frontend/assets/css/style2.css">
+    <link rel="stylesheet" href="frontend/assets/css/responsive.css">
+    <!-- Custom Links Ends -->
+</head>
+
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <!-- Whole Body Wrapper Starts -->
+    <section id="blog-page">
+        <header class="section-header top-header-bg">
+            <div class="container px-0">
+                <div class="top-header d-flex justify-content-end align-items-center">
+                    <div class="top-social-icon">
+                        <ul class="mb-0">
+                            <li class="d-flex align-items-center top_head_right">
+                                <a href="Track Your Order.html" class="Track Your Order_mobile"><span
+                                        class="text-dark">Track
+                                        Your Order</span></a>
+                                <!-- user login start  -->
+                                <div class="dropdown user_login_mobile">
+                                    <button class="btn_account pb-0 btn bg-transparent dropdown-toggle pt-0 font-weight-normal" type="button" data-toggle="dropdown">
+                                        <i class="fa fa-user-o" aria-hidden="true"></i> My Account
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="my_account dropdown-menu pl-3">
+                                        <li>
+                                            <a href="login.html" class="font-weight-normal"><span class="pr-2"><i
+                                                        class="fa fa-user" aria-hidden="true"></i></span>
+                                                Login</a>
+                                        </li>
+                                        <li>
+                                            <a href="register.html" class="font-weight-normal"><span class="pr-2"><i
+                                                        class="fa fa-sign-in" aria-hidden="true"></i></span>Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- cart modal start  -->
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-dark font-weight-bold" id="exampleModalLabel">
+                                                    My Cart
+                                                </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body mb-0 pb-0">
+                                                <div class="table-responsive px-md-3">
+                                                    <table class="table text-center mb-0">
+                                                        <tbody class="">
+                                                            <tr class="d-flex align-items-center">
+                                                                <th scope="row">
+                                                                    <div class="cart_img">
+                                                                        <img src="https://montechbd.com/shopist/demo/public/uploads/1619869340-h-250-tv2.png" alt="image" />
+                                                                    </div>
+                                                                </th>
+                                                                <td class="border-0">
+                                                                    <h5>Blue Diamond Almonds</h5>
+                                                                    <h6>Rs233</h6>
+                                                                </td>
+                                                                <td class="border-0">
+                                                                    <a href="" class="gray_title"><i
+                                                                            class="fa fa-trash-o"
+                                                                            aria-hidden="true"></i></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="d-flex align-items-center">
+                                                                <th scope="row">
+                                                                    <div class="cart_img">
+                                                                        <img src="https://montechbd.com/shopist/demo/public/uploads/1619869340-h-250-tv2.png" alt="image" />
+                                                                    </div>
+                                                                </th>
+                                                                <td class="border-0">
+                                                                    <h5>Blue Diamond Almonds</h5>
+                                                                    <h6>Rs233</h6>
+                                                                </td>
+                                                                <td class="border-0">
+                                                                    <a href="" class="gray_title"><i
+                                                                            class="fa fa-trash-o"
+                                                                            aria-hidden="true"></i></a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer d-flex flex-column align-items-end">
+                                                <div class="cart_top_total">
+                                                    <h6 class="text-dark mr-1">Total Rs233</h6>
+                                                </div>
+                                                <div class="top_cartmodal_btn d-flex justify-content-between align-items-center w-100">
+                                                    <a href="cart.html" class="them_btn_new btn_cart_modal">View
+                                                        Cart</a>
+                                                    <a href="checkout.html" class="them_btn_new btn_cart_modal">Proceed
+                                                        Checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cart modal end  -->
+                                <!-- Popup Search Modal -->
+                                <!-- Modal -->
+                                <!-- Popup Search Modal Ends-->
+                                <!-- search modal end  -->
+                                <!-- search header end  -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="nav_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a class="navbar-brand text-dark font-weight-bold" href="#">Sewa Logo <img src="" alt=""
+                                class="img-fluid"></a>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="search_men">
+                            <form class="form-inline search_top">
+                                <input class="form-control border-0 search_input" type="search" placeholder="Search for Products" aria-label="Search" />
+                                <div class="search_select border-0">
+                                    <select name="" id="" class="border-0 search_select_content px-2">
+                                        <option value="0" selected="selected">
+                                            All Categories
+                                        </option>
+                                        <option class="level-0" value="accessories">
+                                            Accessories
+                                        </option>
+                                        <option class="level-0" value="cameras-photography">
+                                            Cameras &amp; Photography
+                                        </option>
+                                        <option class="level-0" value="computer-components">
+                                            Computer Components
+                                        </option>
+                                        <option class="level-0" value="gadgets">Gadgets</option>
+                                        <option class="level-0" value="home-entertainment">
+                                            Home Entertainment
+                                        </option>
+                                        <option class="level-0" value="laptops-computers">
+                                            Laptops &amp; Computers
+                                        </option>
+                                        <option class="level-0" value="headphones-2">
+                                            Headphones
+                                        </option>
+                                        <option class="level-0" value="speakers-2">Speakers</option>
+                                    </select>
+                                </div>
+                                <div class="search_icon_top text-center">
+                                    <a href="#" class="search_icon text-dark"><i class="fa fa-search"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <ul class="cart_top_list d-flex justify-content-between mb-0 h-100 align-items-center">
+                            <!-- <li>
+                                  <a href="" class="position-relative"
+                                    ><img
+                                      src="./frontend/assets/images/logo/user.svg"
+                                      class="img-fluid"
+                                      alt=""
+                                  /></a>
+                                </li> -->
+                            <li>
+                                <a href="" class="position-relative">
+                                    <sub>0</sub>
+                                    <img src="./frontend/assets/images/logo/compare.svg" class="img-fluid" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="" class="position-relative">
+                                    <sub>0</sub><img src="./frontend/assets/images/logo/wishlist.svg" class="img-fluid" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="" class="position-relative">
+                                    <sub>0</sub><img src="./frontend/assets/images/logo/cart.svg" class="img-fluid" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumbs -->
+        <section id="breadcrumb-wrapper" class="position-relative">
+            <div class="image">
+                <img src="frontend/assets/images/banner/1.jpg" alt="breadcrumb-image" class="img-fluid">
+            </div>
+            <div class="overlay position-absolute">
+                <div class="title p-4">
+                    <!-- <a class="mr-3" href="index.html">Home</a>
+                                                                                <a class="mr-3" href="product-details.html">Product Detail</a> -->
+                    <ol class="breadcrumb p-0 bg-transparent p-0 m-0">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="product-details.html">Blog Details</a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!-- Breadcrumbs Ends -->
+        <!-- Blog Detail  -->
+        <section id="blog-wrapper" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7 col-md-12 p-0">
+                        <div class="col-lg-12 col-12 order-2 order-lg-1">
+                            <div class="image-block">
+                                <img src="frontend/assets/images/banner/1.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-12 mb-5 mb-lg-0 order-3 order-lg-3">
+                            <div class="blog-content px-3">
+                                <h2 class="pt-3">
+                                    Including animation in your design system
+                                </h2>
+                                <ul class="blog-info-link d-flex pb-2">
+                                    <li class="mr-4">
+                                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Travel,
+                                            Lifestyle</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 03
+                                            Comments</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat eligendi, aperiam ullam est suscipit accusantium quasi eveniet asperiores voluptatum veritatis, veniam debitis natus corporis praesentium reprehenderit quas deleniti impedit?
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat eligendi, aperiam ullam est suscipit accusantium quasi eveniet asperiores voluptatum veritatis, veniam debitis natus corporis praesentium reprehenderit quas deleniti impedit?
+                                </p>
+                                <hr class="mt-4">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="blog-comment-section pt-3 pb-3 pl-5 pr-5 mb-5">
+                                    <div class="col-lg-12 my-4">
+                                        <div class="col-lg-12 mb-xl-4 mb-md-2 pl-0">
+                                            <div class="user-title">
+                                                <h2>User Comment</h2>
+                                            </div>
+                                        </div>
+                                        <div class="d-md-flex comment-box-wrapper comment-box mb-xl-4 mb-md-2 mb-2 pb-3">
+                                            <div class="user-comment">
+                                                <a href="#">
+                                                    <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body ml-md-5 mt-md-0 mt-3">
+                                                <h4>Azar Hank</h4>
+                                                <div class="comment-date mb-2">
+                                                    <p class="m-0 text-uppercase"> 12 March, 2021 AT 10:50 </p>
+                                                </div>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequuntur repudiandae, ducimus error animi neque recusandae optio tempora non sequi cupiditate ipsum perspiciatis porro maxime praesentium
+                                                    doloribus amet delectus velit.</p>
+                                                <div class="comment-reply">
+                                                    <div class="d-md-flex comment-box mb-xl-4 mb-md-2">
+                                                        <div class="user-comment">
+                                                            <a href="#">
+                                                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-body ml-md-5 mt-md-0 mt-3">
+                                                            <h4>Azar Hank</h4>
+                                                            <div class="comment-date mb-2">
+                                                                <p class="m-0 text-uppercase"> 12 March, 2021 AT 10:50
+                                                                </p>
+                                                            </div>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequuntur repudiandae, ducimus error animi neque recusandae optio tempora non sequi cupiditate ipsum perspiciatis porro maxime
+                                                                praesentium doloribus amet delectus velit.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button">
+                                                    <a href="
+                                                #"> Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-md-flex comment-box-wrapper comment-box mb-xl-4 mb-md-2 mb-2 pb-3">
+                                            <div class="user-comment">
+                                                <a href="#">
+                                                    <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body ml-md-5 mt-md-0 mt-3">
+                                                <h4>Azar Hank</h4>
+                                                <div class="comment-date mb-2">
+                                                    <p class="m-0 text-uppercase"> 12 March, 2021 AT 10:50 </p>
+                                                </div>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequuntur repudiandae, ducimus error animi neque recusandae optio tempora non sequi cupiditate ipsum perspiciatis porro maxime praesentium
+                                                    doloribus amet delectus velit.</p>
+                                                <div class="comment-reply">
+                                                    <div class="d-md-flex comment-box mb-xl-4 mb-md-2">
+                                                        <div class="user-comment">
+                                                            <a href="#">
+                                                                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                                                            </a>
+                                                        </div>
+                                                        <div class="media-body ml-md-5 mt-md-0 mt-3">
+                                                            <h4>Azar Hank</h4>
+                                                            <div class="comment-date mb-2">
+                                                                <p class="m-0 text-uppercase"> 12 March, 2021 AT 10:50
+                                                                </p>
+                                                            </div>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consequuntur repudiandae, ducimus error animi neque recusandae optio tempora non sequi cupiditate ipsum perspiciatis porro maxime
+                                                                praesentium doloribus amet delectus velit.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button">
+                                                    <a href="
+                                                #"> Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-12">
+                        <div class="sidebar mb-3 p-4">
+                            <div class="popular-tags">
+                                <div class="title position-relative">
+                                    <h4 class="title font-weight-bold mb-4"> Popular Tags </h4>
+                                </div>
+                                <ul class="m-0 p-0">
+                                    <li class="buttons">
+                                        <a href="#">T-shirt</a>
+                                    </li>
+                                    <li class="buttons">
+                                        <a href="#">Jeans</a>
+                                    </li>
+                                    <li class="buttons">
+                                        <a href="#">Medicine</a>
+                                    </li>
+                                    <li class="buttons">
+                                        <a href="#">Health</a>
+                                    </li>
+                                    <li class="buttons">
+                                        <a href="#">Daily Need</a>
+                                    </li>
+                                    <li class="buttons">
+                                        <a href="#">Physics</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar mb-3 p-4">
+                            <div class="popular-post">
+                                <div class="title position-relative">
+                                    <h4 class="title font-weight-bold mb-4"> Popular Post </h4>
+                                </div>
+                                <!-- Sidebar Content -->
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="post-image mr-4 w-xl-25 w-md-0">
+                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
+                                    </div>
+                                    <div class="post-content w-75">
+                                        <div class="date">
+                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
+                                        </div>
+                                        <div class="post-title">
+                                            <a href="blog-detail.html">
+                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sidebar Content Ends -->
+                                <!-- Sidebar Content -->
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="post-image mr-4 w-xl-25 w-md-0">
+                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
+                                    </div>
+                                    <div class="post-content w-75">
+                                        <div class="date">
+                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
+                                        </div>
+                                        <div class="post-title">
+                                            <a href="blog-detail.html">
+                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sidebar Content Ends -->
+                                <!-- Sidebar Content -->
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="post-image mr-4 w-xl-25 w-md-0">
+                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
+                                    </div>
+                                    <div class="post-content w-75">
+                                        <div class="date">
+                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
+                                        </div>
+                                        <div class="post-title">
+                                            <a href="blog-detail.html">
+                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sidebar Content Ends -->
+                                <!-- Sidebar Content -->
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="post-image mr-4 w-xl-25 w-md-0">
+                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
+                                    </div>
+                                    <div class="post-content w-75">
+                                        <div class="date">
+                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
+                                        </div>
+                                        <div class="post-title">
+                                            <a href="blog-detail.html">
+                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
+                                                </h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Sidebar Content Ends -->
+                            </div>
+                        </div>
+                        <div class="sidebar mb-3 p-4">
+                            <div class="popular-tags">
+                                <div class="title position-relative">
+                                    <h4 class="title font-weight-bold mb-3"> Newsletter </h4>
+                                </div>
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control blog-form" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder="Enter email" required="">
+                                    </div>
+                                    <button class="btn-custom" type="submit">
+                                        Subscribe
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="sidebar mb-3 p-4">
+                            <div class="popular-tags">
+                                <div class="title position-relative">
+                                    <h4 class="title font-weight-bold mb-3">Add a Comment </h4>
+                                </div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 mb-md-0 mb-4">
+                                            <input type="text" class="form-control border-0 rounded-0" placeholder="Name">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <input type="email" class="form-control border-0 rounded-0" placeholder="Email address">
+                                        </div>
+                                        <div class="col-12 my-3">
+                                            <div class="col-text-are d-flex justify-content-center">
+                                                <textarea class="w-100 p-3 border-0 rounded-0" placeholder="Add Comment"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-center mb-2">
+                                                <div class="p-ratings">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="button-wrapper m-auto">
+                                            <button href="#" class="btn-custom px-5">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Detail Ends -->
+        <!--=============================FOOTER START  ============================ -->
+        <footer id="footer" class="footer-bg-color position-relative padding_top pt-5" style="--r1: 130%; --r2: 71.5%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="footer-logo-box text_white">
+                            <div class="header-logo">
+                                <a class="footer-logo navbar-brand text-white font-weight-bold text-uppercase font-weight-bolder mb-4 p-0" href="index.html">
+                                    <img src="img/logo.png" alt="image" />
+                                </a>
+                            </div>
+                            <p class="text-white font-weight-normal">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, quia accusantium eum aperiam ea eaque ab dignissimos totam pariatur debitis corporis laborum earum illo alias cumque harum quasi, rem commodi.
+                            </p>
+                            <ul class="d-flex">
+                                <li class="logo-bg">
+                                    <a href="https://www.facebook.com" class="text-white"><i class="fa fa-facebook"
+                                            aria-hidden="true"></i></a>
+                                </li>
+                                <li class="feature_in_bg ml-3">
+                                    <a href="https://www.instagram.com" class="text-white"=""=""><i
+                                            class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="logo-bg ml-3">
+                                    <a href="https://www.google.com" class="text-white"=""=""><i
+                                            class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="logo-bg ml-3">
+                                    <a href="https://np.linkedin.com" class="text-white"=""=""><i class="fa fa-linkedin"
+                                            aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="footer-title text_white footer_after">
+                            <h4 class="mb-2 mb-md-4 text-white">Quick Links</h4>
+                            <ul class="text-white">
+                                <li class="mb-2">
+                                    <a href="index.html" class="text-white">Home</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="product.html" class="text-white">Products</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="checkout.html" class="text-white">Checkout</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="cart.html" class="text-white">Cart</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="blog.html" class="text-white">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <div class="footer-title text_white footer_after">
+                            <h4 class="text-white mb-2 mb-md-4">Links</h4>
+                            <ul>
+                                <li class="mb-2">
+                                    <a href="" class="text-white">Links 1</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="" class="text-white">Links 2</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="" class="text-white">Links 3</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="" class="text-white">Links 4</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="" class="text-white">Links 5</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 mt-4 mt-lg-0">
+                        <div class="footer-title text_white footer_after">
+                            <h4 class="text-white mb-2 mb-md-4">Find Us</h4>
+                            <ul>
+                                <li class="text-white mb-2">
+                                    <span class="pr-3"><i class="fa fa-map-marker"
+                                            aria-hidden="true"></i></span>Kathmandu, Nepal
+                                </li>
+                                <li class="text-white mb-2">
+                                    <a href="tel:+61283870907, +61452145677" class="text-light"><span class="pr-3"><i
+                                                class="fa fa-phone" aria-hidden="true"></i></span>
+                                        +61283870907, +61452145677</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:niuto@gmail.com" class="text-white"><span class="pr-3"><i
+                                                class="fa fa-envelope-square"
+                                                aria-hidden="true"></i></span>niuto@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-12 text-center pb-3 pt-2">
+                        <p class="mb-0 text-white text-center font-weight-normal">
+                            Copyright All Right Reserved 2021.
+                            <span class="testimonial-title">Power by NEXT NEPAL </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--=============================FOOTER END  ============================ -->
+    </section>
+    <!-- Whole Body Wrapper Ends -->
+    <!-- 1st Jquery Link Starts-->
+    <script src="frontend/assets/jquery-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Jquery Link Ends-->
+    <!-- Popper -->
+    <script src="frontend/assets/popper/popper.min.js"></script>
+    <!-- Popper Ends-->
+    <!-- 3rd Bootstrap Js Link Starts -->
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="frontend/assets/bootstrap-4.3.1/js/bootstrap.min.js.map"></script>
+    <!-- Bootstrap Js Link Ends -->
+    <!-- Slick Js -->
+    <script src="frontend/assets/slick/slick.min.js"></script>
+    <!-- Slick Js Ends-->
+    <!-- Magnific Popup -->
+    <script src="frontend/assets/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup Ends-->
+    <!-- Custom Js Starts -->
+    <script src="https://k1ngzed.com/dist/swiper/swiper.min.js"></script>
+    <script src="https://k1ngzed.com/dist/EasyZoom/easyzoom.js"></script>
+    <!-- Countdown start -->
+    <script src="frontend/assets/countdown/js/flipclock.js"></script>
+    <!-- <script src="frontend/assets/countdown/js/flipclock.min.js"></script> -->
+    <!-- Countdown end -->
+    <script src="frontend/assets/js/main.js"></script>
+    <script src="frontend/assets/js/secondary.js"></script>
+    <!-- Custom Js Ends -->
+</body>
+
+</html>
