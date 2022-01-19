@@ -20,6 +20,11 @@ a {
     color: var(--theme_color);
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* width */
 
@@ -1467,3 +1472,234 @@ textarea::placeholder {
 
 
 /* Blog List Ends */
+
+
+/* Vendor Listing */
+
+#vendor-listing-wrapper {
+    font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+#vendor-listing-wrapper a {
+    text-decoration: none;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    padding: 7px;
+    display: inline-block;
+    transition: 1s;
+    width: 100%;
+    cursor: pointer;
+}
+
+#vendor-listing-wrapper a:hover {
+    box-shadow: rgb(125 125 125 / 45%) 0px 25px 20px -20px;
+    border: 1px solid transparent;
+    transition: 1s;
+}
+
+#vendor-listing-wrapper .image img {
+    max-height: 120px;
+    min-height: 120px;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    transition: 3s ease-in;
+}
+
+#vendor-listing-wrapper .image {
+    overflow: hidden;
+    width: 40%;
+    border-radius: 5px;
+}
+
+#vendor-listing-wrapper .image:hover img {
+    transform: scale(1.1);
+    transition: transform 3s ease-out;
+}
+
+#vendor-listing-wrapper .vendor-content ul li i {
+    color: orange;
+}
+
+#vendor-listing-wrapper .vendor-content .category {
+    font-size: 15px;
+}
+
+#vendor-listing-wrapper label {
+    font-size: 19px;
+    color: var(--main-color);
+}
+
+
+/* Vendor Listing Ends */
+
+
+/* Faq  */
+
+#faq-wrapper .sidebar {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 0px #e1e1e1;
+    border-radius: 6px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#faq-wrapper .sidebar .title {
+    color: var(--theme_color);
+    font-size: 20px;
+}
+
+#faq-wrapper .popular-post .post-image img {
+    max-height: 80px;
+    min-height: 80px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 5px;
+}
+
+#faq-wrapper .popular-post .post-content .post-title a {
+    text-decoration: none;
+}
+
+#faq-wrapper .popular-post .post-content .post-title a:hover {
+    color: var(--theme_color);
+}
+
+#faq-wrapper .popular-post .post-content {
+    height: 72px !important;
+    overflow: hidden;
+}
+
+#faq-wrapper .popular-post .post-content p {
+    font-size: 12px;
+}
+
+#faq-wrapper .popular-post .post-content h5 {
+    font-size: 16px;
+}
+
+#faq-wrapper .categories ul li {
+    margin: 10px 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#faq-wrapper .categories li {
+    max-height: 28px;
+    min-height: 28px;
+    overflow: hidden;
+}
+
+#faq-wrapper .popular-tags ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#faq-wrapper .popular-tags ul li:hover {
+    border: 2px solid var(--theme_color);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#faq-wrapper .popular-tags ul li {
+    padding: 5px 18px;
+    border: 2px solid rgba(14, 13, 13, 0.34);
+    border-radius: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+
+/* Faq Page Starts */
+
+#faq-wrapper .head-collapser {
+    background: var(--title_text);
+    border-left: 4px solid var(--theme_color);
+}
+
+#faq-wrapper #accordion .text_white {
+    color: white;
+    padding: 8px;
+    font-size: 13px;
+}
+
+#faq-wrapper .card-header span {
+    position: absolute;
+    right: 20px;
+}
+
+#faq-wrapper .sidebar {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 0px #e1e1e1;
+    border-radius: 6px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+#faq-wrapper .categories ul li:hover {
+    cursor: pointer;
+    transform: translateX(8px);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+#faq-wrapper .categories ul li i {
+    color: #FDC10E;
+}
+
+#faq-wrapper .categories ul li {
+    margin: 10px 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+#faq-wrapper .categories li {
+    max-height: 28px;
+    min-height: 28px;
+    overflow: hidden;
+}
+
+#faq-wrapper .quick-links ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+#faq-wrapper .quick-links ul li:hover {
+    border: 2px solid #FDC10E;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+#faq-wrapper .quick-links ul li {
+    padding: 8px 20px;
+    border: 1px solid rgba(14, 13, 13, 0.34);
+    border-radius: 5px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+#faq-wrapper .faq p {
+    font-size: 13px;
+}
+
+#faq-wrapper .faq {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 0px #e1e1e1;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+
+/* Faq Page Ends */
+
+
+/* Faq Ends */

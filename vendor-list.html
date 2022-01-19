@@ -22,13 +22,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Vidaloka&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Readex+Pro:wght@200&display=swap" rel="stylesheet" />
     <!-- Font Link Ends -->
     <link rel="stylesheet" href="https://k1ngzed.com/dist/swiper/swiper.min.css" />
     <link rel="stylesheet" href="https://k1ngzed.com/dist/EasyZoom/easyzoom.css" />
-    <!-- Countdown start -->
-    <link rel="stylesheet" href="frontend/assets/countdown/css/flipclock.css" />
-    <!-- Countdown Ends -->
     <link rel="stylesheet" href="frontend/assets/css/style.css">
     <link rel="stylesheet" href="frontend/assets/css/style2.css">
     <link rel="stylesheet" href="frontend/assets/css/responsive.css">
@@ -38,7 +34,7 @@
 <body onload="myFunction()">
     <div id="loading"></div>
     <!-- Whole Body Wrapper Starts -->
-    <section id="blog-page">
+    <section id="vendor-listing-page">
         <header class="section-header top-header-bg">
             <div class="container px-0">
                 <div class="top-header d-flex justify-content-end align-items-center">
@@ -192,13 +188,13 @@
                     <div class="col-md-2">
                         <ul class="cart_top_list d-flex justify-content-between mb-0 h-100 align-items-center">
                             <!-- <li>
-                                    <a href="" class="position-relative"
-                                        ><img
-                                        src="./frontend/assets/images/logo/user.svg"
-                                        class="img-fluid"
-                                        alt=""
-                                    /></a>
-                                    </li> -->
+                                  <a href="" class="position-relative"
+                                    ><img
+                                      src="./frontend/assets/images/logo/user.svg"
+                                      class="img-fluid"
+                                      alt=""
+                                  /></a>
+                                </li> -->
                             <li>
                                 <a href="" class="position-relative">
                                     <sub>0</sub>
@@ -225,309 +221,356 @@
             <div class="overlay position-absolute">
                 <div class="title p-4">
                     <!-- <a class="mr-3" href="index.html">Home</a>
-                                                                                    <a class="mr-3" href="product-details.html">Product Detail</a> -->
+                                                                            <a class="mr-3" href="product-details.html">Product Detail</a> -->
                     <ol class="breadcrumb p-0 bg-transparent p-0 m-0">
                         <li class="breadcrumb-item">
                             <a href="index.html">Home</a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a href="product-details.html">Blog</a>
+                            <a href="vendor-list.html">Vendor List</a>
                         </li>
                     </ol>
                 </div>
             </div>
         </section>
         <!-- Breadcrumbs Ends -->
-        <!-- Blog Detail  -->
-        <section id="blog-wrapper" class="py-5 blog-list">
+        <!-- Vendor Listing -->
+        <section id="vendor-listing-wrapper" class="pt-2 pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-7 col-md-12 p-0">
-                        <div class="row">
-                            <div class="col-6">
-                                <!-- Blog List Content -->
-                                <div class="blog-man-block mb-3">
-                                    <div class="col-lg-12 col-12 order-2 order-lg-1 p-0">
-                                        <div class="image-block">
-                                            <img src="frontend/assets/images/banner/1.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-12 mb-5 mb-lg-0 order-3 order-lg-3">
-                                        <div class="blog-content">
-                                            <h4 class="pt-3">
-                                                Including animation in your design system
-                                            </h4>
-                                            <ul class="blog-info-link d-flex">
-                                                <li class="mr-4">
-                                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Travel,
-                                                        Lifestyle</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 03
-                                                        Comments</a>
-                                                </li>
-                                            </ul>
-                                            <p class="my-2">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat eligendi, aperiam ullam est suscipit accusantium quasi eveniet asperiores voluptatum veritatis, veniam debitis natus corporis praesentium reprehenderit quas deleniti impedit?
-                                            </p>
-                                            <ul class="social-link d-flex justify-content-between align-items-center mb-3">
-                                                <a href="" class="violet_text blog-btn">CONTINUE READING <span
-                                                        class="ml-2"><i class="fa fa-arrow-right"
-                                                            aria-hidden="true"></i></span></a>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Blog List Content Ends -->
-                            </div>
-                            <div class="col-6">
-                                <!-- Blog List Content -->
-                                <div class="blog-man-block mb-3">
-                                    <div class="col-lg-12 col-12 order-2 order-lg-1 p-0">
-                                        <div class="image-block">
-                                            <img src="frontend/assets/images/banner/1.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-12 mb-5 mb-lg-0 order-3 order-lg-3">
-                                        <div class="blog-content">
-                                            <h4 class="pt-3">
-                                                Including animation in your design system
-                                            </h4>
-                                            <ul class="blog-info-link d-flex">
-                                                <li class="mr-4">
-                                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Travel,
-                                                        Lifestyle</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 03
-                                                        Comments</a>
-                                                </li>
-                                            </ul>
-                                            <p class="my-2">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat eligendi, aperiam ullam est suscipit accusantium quasi eveniet asperiores voluptatum veritatis, veniam debitis natus corporis praesentium reprehenderit quas deleniti impedit?
-                                            </p>
-                                            <ul class="social-link d-flex justify-content-between align-items-center mb-3">
-                                                <a href="" class="violet_text blog-btn">CONTINUE READING <span
-                                                        class="ml-2"><i class="fa fa-arrow-right"
-                                                            aria-hidden="true"></i></span></a>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Blog List Content Ends -->
-                            </div>
-                            <div class="col-6">
-                                <!-- Blog List Content -->
-                                <div class="blog-man-block mb-3">
-                                    <div class="col-lg-12 col-12 order-2 order-lg-1 p-0">
-                                        <div class="image-block">
-                                            <img src="frontend/assets/images/banner/1.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-12 mb-5 mb-lg-0 order-3 order-lg-3">
-                                        <div class="blog-content">
-                                            <h4 class="pt-3">
-                                                Including animation in your design system
-                                            </h4>
-                                            <ul class="blog-info-link d-flex">
-                                                <li class="mr-4">
-                                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Travel,
-                                                        Lifestyle</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 03
-                                                        Comments</a>
-                                                </li>
-                                            </ul>
-                                            <p class="my-2">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat eligendi, aperiam ullam est suscipit accusantium quasi eveniet asperiores voluptatum veritatis, veniam debitis natus corporis praesentium reprehenderit quas deleniti impedit?
-                                            </p>
-                                            <ul class="social-link d-flex justify-content-between align-items-center mb-3">
-                                                <a href="" class="violet_text blog-btn">CONTINUE READING <span
-                                                        class="ml-2"><i class="fa fa-arrow-right"
-                                                            aria-hidden="true"></i></span></a>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Blog List Content Ends -->
-                            </div>
-                            <div class="col-6">
-                                <!-- Blog List Content -->
-                                <div class="blog-man-block mb-3">
-                                    <div class="col-lg-12 col-12 order-2 order-lg-1 p-0">
-                                        <div class="image-block">
-                                            <img src="frontend/assets/images/banner/1.jpg" alt="" class="img-fluid">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-12 mb-5 mb-lg-0 order-3 order-lg-3">
-                                        <div class="blog-content">
-                                            <h4 class="pt-3">
-                                                Including animation in your design system
-                                            </h4>
-                                            <ul class="blog-info-link d-flex">
-                                                <li class="mr-4">
-                                                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Travel,
-                                                        Lifestyle</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-comments" aria-hidden="true"></i> 03
-                                                        Comments</a>
-                                                </li>
-                                            </ul>
-                                            <p class="my-2">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat eligendi, aperiam ullam est suscipit accusantium quasi eveniet asperiores voluptatum veritatis, veniam debitis natus corporis praesentium reprehenderit quas deleniti impedit?
-                                            </p>
-                                            <ul class="social-link d-flex justify-content-between align-items-center mb-3">
-                                                <a href="" class="violet_text blog-btn">CONTINUE READING <span
-                                                        class="ml-2"><i class="fa fa-arrow-right"
-                                                            aria-hidden="true"></i></span></a>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Blog List Content Ends -->
-                            </div>
+                    <div class="col-12 mb-4">
+                        <ul class="show-filter d-flex justify-content-between align-items-center">
+                            <li class="p-3">
+                                Showing all Vendors
+                            </li>
+                            <li class="p-3 d-flex align-items-center">
+                                <select class="form-control mx-2">
+                                    <option selected="">Choose a Filter</option>
+                                    <option>Alphabetically</option>
+                                    <option>Price High to Low</option>
+                                    <option>Recently Added</option>
+                                    <option>MOstly Purchased</option>
+                                </select>
 
-
-                            <div class="col-12">
-                                <div class="pagination d-flex justify-content-center">
-                                    <a href="#">Previous</a>
-                                    <a href="#">1</a>
-                                    <a href="#" class="active">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">Next</a>
-                                </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-xl-4 col-lg-5 col-md-12">
-                        <div class="sidebar mb-3 p-4">
-                            <div class="popular-tags">
-                                <div class="title position-relative">
-                                    <h4 class="title font-weight-bold mb-4"> Popular Tags </h4>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
                                 </div>
-                                <ul class="m-0 p-0">
-                                    <li class="buttons">
-                                        <a href="#">T-shirt</a>
-                                    </li>
-                                    <li class="buttons">
-                                        <a href="#">Jeans</a>
-                                    </li>
-                                    <li class="buttons">
-                                        <a href="#">Medicine</a>
-                                    </li>
-                                    <li class="buttons">
-                                        <a href="#">Health</a>
-                                    </li>
-                                    <li class="buttons">
-                                        <a href="#">Daily Need</a>
-                                    </li>
-                                    <li class="buttons">
-                                        <a href="#">Physics</a>
-                                    </li>
-                                </ul>
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Meds Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
                             </div>
-                        </div>
-                        <div class="sidebar mb-3 p-4">
-                            <div class="popular-post">
-                                <div class="title position-relative">
-                                    <h4 class="title font-weight-bold mb-4"> Popular Post </h4>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
                                 </div>
-                                <!-- Sidebar Content -->
-                                <div class="d-flex align-items-center mb-4">
-                                    <div class="post-image mr-4 w-xl-25 w-md-0">
-                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Corprate Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
                                     </div>
-                                    <div class="post-content w-75">
-                                        <div class="date">
-                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
-                                        </div>
-                                        <div class="post-title">
-                                            <a href="blog-detail.html">
-                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
-                                                </h5>
-                                            </a>
-                                        </div>
-                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
                                 </div>
-                                <!-- Sidebar Content Ends -->
-                                <!-- Sidebar Content -->
-                                <div class="d-flex align-items-center mb-4">
-                                    <div class="post-image mr-4 w-xl-25 w-md-0">
-                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
-                                    </div>
-                                    <div class="post-content w-75">
-                                        <div class="date">
-                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
-                                        </div>
-                                        <div class="post-title">
-                                            <a href="blog-detail.html">
-                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
-                                                </h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Sidebar Content Ends -->
-                                <!-- Sidebar Content -->
-                                <div class="d-flex align-items-center mb-4">
-                                    <div class="post-image mr-4 w-xl-25 w-md-0">
-                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
-                                    </div>
-                                    <div class="post-content w-75">
-                                        <div class="date">
-                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
-                                        </div>
-                                        <div class="post-title">
-                                            <a href="blog-detail.html">
-                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
-                                                </h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Sidebar Content Ends -->
-                                <!-- Sidebar Content -->
-                                <div class="d-flex align-items-center mb-4">
-                                    <div class="post-image mr-4 w-xl-25 w-md-0">
-                                        <img src="frontend/assets/images/banner/1.jpg" alt="">
-                                    </div>
-                                    <div class="post-content w-75">
-                                        <div class="date">
-                                            <p class="text-uppercase mb-1"> Jan 21, 2021 </p>
-                                        </div>
-                                        <div class="post-title">
-                                            <a href="blog-detail.html">
-                                                <h5 class="font-weight-bold"> Market is Changing lorem ipsum in the business.
-                                                </h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Sidebar Content Ends -->
+
                             </div>
-                        </div>
-                        <div class="sidebar mb-3 p-4">
-                            <div class="popular-tags">
-                                <div class="title position-relative">
-                                    <h4 class="title font-weight-bold mb-3"> Newsletter </h4>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
                                 </div>
-                                <form action="#">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control blog-form" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder="Enter email" required="">
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Herbs & Meds Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
                                     </div>
-                                    <button class="btn-custom" type="submit">
-                                        Subscribe
-                                    </button>
-                                </form>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                                </div>
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Corprate Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                                </div>
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Herbs & Meds Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                                </div>
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Meds Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                                </div>
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Meds Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                                </div>
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Corprate Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+                        <a href="dashboard-vendor-profile.html">
+                            <div class="vendor-wrap d-flex align-items-center">
+                                <div class="image">
+                                    <img src="frontend/assets/images/banner/1.jpg" alt="vendor-profile-image">
+                                </div>
+                                <div class="vendor-content ml-3">
+                                    <label for="name" class="m-0 font-weight-bold">Herbs & Meds Co.</label>
+                                    <div class="category">
+                                        Category: Medical Supply
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                        <li class="mr-1">
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 text-center mt-4">
+                        <button type="button" class="btn-custom mx-auto">View More</button>
                     </div>
                 </div>
+
             </div>
         </section>
-        <!-- Blog Detail Ends -->
+        <!-- Vendor Listing Ends -->
+
+
         <!--=============================FOOTER START  ============================ -->
         <footer id="footer" class="footer-bg-color position-relative padding_top pt-5" style="--r1: 130%; --r2: 71.5%">
             <div class="container">
@@ -661,10 +704,6 @@
     <!-- Custom Js Starts -->
     <script src="https://k1ngzed.com/dist/swiper/swiper.min.js"></script>
     <script src="https://k1ngzed.com/dist/EasyZoom/easyzoom.js"></script>
-    <!-- Countdown start -->
-    <script src="frontend/assets/countdown/js/flipclock.js"></script>
-    <!-- <script src="frontend/assets/countdown/js/flipclock.min.js"></script> -->
-    <!-- Countdown end -->
     <script src="frontend/assets/js/main.js"></script>
     <script src="frontend/assets/js/secondary.js"></script>
     <!-- Custom Js Ends -->
